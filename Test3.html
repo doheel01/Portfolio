@@ -12,12 +12,12 @@
   <style>
 	body, html {
 		height: 100%;
-		margin: 0.5%;
+		margin: 0.3%;
 	}
 
 	.bg {
 	  /* The image used */
-	  background-image: url("images/la jolla.jpg");
+	  background-image: url("images/background.jpg");
 
 	  /* Full height */
 	  height: 100%; 
@@ -27,6 +27,28 @@
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	}
+	
+	
+	#myBtn {
+	  display: none;
+	  position: fixed;
+	  bottom: 20px;
+	  right: 30px;
+	  z-index: 99;
+	  font-size: 18px;
+	  border: none;
+	  outline: none;
+	  background-color: dark;
+	  color: black;
+	  cursor: pointer;
+	  padding: 15px;
+	  border-radius: 4px;
+	}
+
+	#myBtn:hover {
+	  background-color: #555;
+	}
+	
   </style>
  
 </head>
@@ -40,7 +62,7 @@
 
 
 <!-- Navigation bar -->  
-	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
 	<!-- Brand -->
 	<a class="navbar-brand" href="file:///C:/Users/doheel01/Downloads/Test1.html#">
 		<img src="images/logo.png" alt="logo" style="width:40px;">
@@ -48,21 +70,21 @@
 	</a>
 
 	<!-- Toggler/collapsibe Button -->
-	<button class="navbar-toggler" type="button" data -toggle="collapse" data - target="#collapsibleNavbar">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 
 	<!-- Navbar links -->
-	<div class="collapse navbar-collapse d-flex justify-content-end" id="collapsibleNavbar">
+	<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
 		<ul class="navbar-nav">
 		  <li class="nav-item">
-			<a class="nav-link" href="file:///C:/Users/doheel01/Downloads/Test2.html#">About</a>
+			<a class="nav-link" href="file:///C:/Users/doheel01/Downloads/Test2.html">About</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="file:///C:/Users/doheel01/Downloads/Test3.html">Projects</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Resume</a>
+			<a class="nav-link" href="resume.pdf" download>Resume</a>
 		  </li> 
 		  <li class="nav-item">
 			<a class="nav-link" href="file:///C:/Users/doheel01/Downloads/Test4.html">Contact</a>
@@ -70,62 +92,81 @@
 		</ul>
 	  </div> 
 	</nav>
+	<br>
 
 <!-- Introduction Box -->  
 
+<div class="container">
 <div class="row">
-		  <div class="card-body col mx-auto">
-			<div class="card-body bg-light">
-			
+		  <div class="col-sm-4">
 				<p><h2 class="card-title">Personal Logo</h2></p>
-				<img class="img-fluid float-left" src="images/logo.png" alt="Logo" width="200">
+				<img class="img-fluid float-left" src="images/logo.png" alt="Logo" width="195">
+			</div>	
+		
+		  <div class="col-sm-8">
+				<p class="mt-5"><h4 class="card-text text-justify"><small>
+				The first media work I was introduced to was a logo design.</small></h4></p>
+				<p><h4 class="card-text text-justify"><small>
+				The image I wanted to create was [a light that shines in the dark].
+				I've always loved how a light is brightest and most valuable in the dark.
+				I chose to draw the moon - a light that doesn't faint even through many nights.
 				
-				<p><h4 class="card-text">dlkajsfiewj;fjas</h4></p>
-				
-				<a href="#" class="card-link">Card link</a>
-				<a href="#" class="card-link">Another link</a>
+				Also, the moon's shadow is to express the other side I had experienced as a young immigrant. 
+				</small></h4></p>
+				<p><h4 class="card-text text-justify"><small>
+				In addition, I engraved the Korean characters of my first name, ㄷ and ㅎ.
+				I wanted to express my identity as a Korean American.
+				</small></h4></p>
 			
-			</div>
-				
-				<a href="#" class="btn btn-dark stretched-link float-left"></a>
 			<!--<div class="card-footer">Medium</div>-->
 		  </div>
-
-		  <div class="card-body col mx-auto">
-			<div class="card-body bg-light">
-				<p><h2>Tressty</h2></p>
-				<img class="img-fluid" src="images/team.png" alt="Project" width="200"> </div> 
-				<a href="#" class="btn btn-dark stretched-link"></a>
-			<!--<div class="card-footer">Medium</div>-->
-		  </div>
-		  
-		  <div class="card-body col mx-auto">
-			<div class="card-body bg-light">
-				<p><h2>Resume</h2></p>
-				<img class="img-fluid" src="images/resume2.png" alt="Resume" width="140"> </div> 
-				<a href="#" class="btn btn-dark stretched-link"></a>
-			<!--<div class="card-footer">Medium</div>-->
-		  </div>
+</div> </div>		
 			
-</div>
+<div class="container mt-5">
+<div class="row">
+		  <div class="col-sm-4">
+			
+				<p><h2 class="card-title">Tressty</h2></p>
+				<img class="img-fluid float-left" src="images/team1.png" alt="Logo" width="150">
+			</div>	
+		
+		  <div class="col-sm-8">
+				<p class="mt-5"><h4 class="card-text text-justify"><small>
+				This was a group project I participated in UCSD COGS 187A course.
+				Our first agenda was to create a unique health-related app.
+				</small></h4></p>
+				<p><h4 class="card-text text-justify"><small>
+				It all began with the creation of our team name - JSMD.
+				</small></h4></p>
+				<p><h4 class="card-text text-justify"><small>
+				Then, we decided on our app to be about hair health.
+				</small></h4></p>
+				<p><h4 class="card-text text-justify"><small>
+				If you are interested to know more, please click the
+				link right below to read about our journey!
+				</small></h4></p>
+				
+				<a href="https://medium.com/ucsd-cogs-187a-summer-2018/brainstorming-what-will-jsmd-do-6b95e2afa19f" class="card-link">My Post</a>
+				<a href="https://medium.com/@jsmd.jsmd.2019" class="card-link">JSMD Stories</a>
+			
+			<!--<div class="card-footer">Medium</div>-->
+		  </div>
+</div> </div>
 
-
-
-
-<!-- Personal Photography -->
+<!-- Personal Photography
 <div class="card-body text-center col mx-auto">
 	<div class="card-body bg-light">
     <div id="demo" class="carousel slide" data-ride="carousel">
 		<p><h2>Photography</h2><p>
 
-	  <!-- Indicators-->
+	  <!-- Indicators
 	  <ul class="carousel-indicators">
 		<li data-target="#demo" data-slide-to="0" class="active"></li>
 		<li data-target="#demo" data-slide-to="1"></li>
 		<li data-target="#demo" data-slide-to="2"></li>
 	  </ul>
 	  
-	  <!-- The slideshow-->
+	  <!-- The slideshow
 	  <div class="carousel-inner">
 		<div class="carousel-item active">
 		  <img src="images/la jolla.jpg" alt="Los Angeles" width="1100" height="500">
@@ -138,7 +179,7 @@
 		</div>
 	  </div>
 	  
-	  <!-- Left and right controls -->
+	  <!-- Left and right controls
 	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
 		<span class="carousel-control-prev-icon"></span>
 	  </a>
@@ -146,6 +187,31 @@
 		<span class="carousel-control-next-icon"></span>
 	  </a>
 	  </div>
+-->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<h5 class="mt-5 mx-auto bg-light text-center" style="width:300px;"><small>designed and coded from scratch @2019</small></h5> 
 
 
 </body>
